@@ -7,6 +7,7 @@ from routes.tasks import tasks
 app = Flask(__name__)
 # Enable CORS for specific origins
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+
 # Database Configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:connect%40123@localhost/todolist'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
